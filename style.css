@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSQ5cs7FEp9wm6aJm9DOvoHAqpuzR8TbFjpg&usqp=CAU');
+    background-size: cover;
+}
+
+.gameOver {
+    text-align: center;
+    background-color: rgb(177, 73, 73);
+    padding: 8px;
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+button {
+    padding: 8px;
+    background-color: rgb(16, 204, 16);
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(16, 204, 16);
+    border: 2px solid rgb(16, 204, 16);
+}
+
+.score {
+    text-align: center;
+    padding: 3px;
+    font-size: 1.5rem;
+}
+
+.whole {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    border: 2px solid black;
+    margin-top: 10px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPyvNU-LCsKi98pFnjqezVUARoq0ZuyC7AQ&usqp=CAU');
+    background-size: cover;
+}
+
+.grid div {
+    height: 7vh;
+    width: 7vh;
+}
+
+.bird {
+    background-image: url('bird.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wall {
+    background-color: yellow;
+}
